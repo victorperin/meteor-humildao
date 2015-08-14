@@ -14,6 +14,16 @@ if (Posts.find().count() === 0) {
     conteudo: '<p>teste</p><br/><b>qwertyuiop</b>',
     flagged: false
   });
+
+  Categorias.insert({
+    nome: "humildade"
+  });
+  Categorias.insert({
+    nome: "blog"
+  });
+  Categorias.insert({
+    nome: "coisas estranhas com cidilhação"
+  });
 }else{
   console.log("Banco de dados já está populado, por favor, execute 'meteor reset' no terminal.")
 }
