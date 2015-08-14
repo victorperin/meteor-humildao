@@ -1,0 +1,23 @@
+<template name="layout">
+    <nav class=" blue darken-2">
+      <div class="nav-wrapper container">
+        <a href="/" class="brand-logo">Blog Humildão</a>
+        <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          {{> listarCategorias}}
+        </ul>
+        <ul class="side-nav" id="mobile-menu">
+          {{> listarCategorias}}
+        </ul>
+      </div>
+    </nav>
+    <script>
+    $( document ).ready(function(){
+      $(".button-collapse").sideNav();
+    })
+    </script>
+
+  <div class="container">
+    {{> yield}}
+  </div>
+</template>
