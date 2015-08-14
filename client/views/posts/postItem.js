@@ -1,5 +1,5 @@
 Template.postItem.helpers({
   url: function(){
-    return this._id;
+    return "/post/"+encodeURIComponent(this._id);
   }
 });
