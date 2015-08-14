@@ -21,9 +21,6 @@ if (Posts.find().count() === 0) {
   Categorias.insert({
     nome: "blog"
   });
-  Categorias.insert({
-    nome: "coisas estranhas com cidilhação"
-  });
 }else{
   console.log("Banco de dados já está populado, por favor, execute 'meteor reset' no terminal.")
 }
